@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="http://redsox.uoa.auckland.ac.nz/ups/logo-115x115.png"/>
+<title>School Homepage</title>
+<script src="dboo926.js"></script>
+<link rel="stylesheet" type = "text/css" href="dboo926.css"/>
+</head>
+
+<body>
+
+<div><img id="pageLogo" src= "http://redsox.uoa.auckland.ac.nz/ups/logo.svg" alt= "Cs Logo";>
+<h1>Computer Science</h1></div>
+<p align="right" style="padding-right: 2%; padding-top: 0%;"><input type="button" id="log_in_status" onclick="log_out()" value="You are logged out"/></p>
+<ul>
+    <li><a onclick = "home()" href = "#">Home</a></li>
+    <li><a onclick = "site_change('courses')" href = "#">Course</a></li>
+    <li><a onclick = "site_change('people')" href = "#">People</a></li>
+    <li><a onclick = "site_change('newsfeed')" href = "#">News</a></li>
+    <li><a onclick = "site_change('noticesfeed')" href = "#">Notices</a></li>
+    <li><a onclick = "site_change('htmlcomments')" href = "#">Guestbook</a></li>
+    <li><a onclick = "site_change('itemlist')" href = "#">Download</a></li>
+    <li><a onclick = "register()" href = "#">Register</a></li>
+</ul>
+
+<p style="visibility:hidden"></p>
+<div id="comment">
+    <p>Enter your Comment:</p>
+    <textarea id = "Input">
+    </textarea>
+<br>
+    <p>Enter your Name:</p>
+    <textarea id = "Name">
+    <br>
+    </textarea>
+<br>
+    <button type="button" onclick="javascript: guestbook_write()">Submit</button>
+</div>
+
+<div id="LogIn" style="display: none">
+    <center style="padding: 8%;">
+        <p>Please log in to download...</p>
+        <p>Name <input type="text" id="username"></p>
+        <p>Password <input type="text" id="password"></p>
+        <button type="button" onclick="javascript: LoggingIn()">Log In</button>
+    </center>
+</div>
+
+<div id="register" style="display: none">
+    <center style="padding: 8%;">
+        <p>Please enter the following...</p>
+        <p> Name <input type="text" id="r_username"></p>
+        <p> Password <input type="text" id="r_password"></p>
+        <p> Address <input type="text" id="address"></p>
+        <button type="button" onclick="javascript: registerUser()">Register</button>
+    </center>
+</div>
+
+<div id="search" style="display: none;">
+    <div style= "padding: 10px;">
+    <p> Search  <input type="text" id="searchInput">
+    <button type="button" onclick="javascript: SearchItem()"> Go </button></p>
+    </div>  
+</div>
+
+<section id ="showTab"></section>
+<section id = "guestbook"></section>
+
+
+</body>
+</html>

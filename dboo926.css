@@ -1,0 +1,82 @@
+
+th, td {
+    vertical-align: center;
+    padding: 2%;
+    height: 5%;
+    border-bottom: .5px solid #696969;
+    text-align: left;  
+}
+
+ul {
+    list-style-type: none;
+    font: 1em sans-serif;
+    padding: 1%;
+    overflow: hidden;
+    background-color: #095080;
+    width: 100%;    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 10%;
+    text-decoration-line: none;
+    height: 5%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font: 1em sans-serif;
+    font-weight: bold; 
+    font-size: 30px;
+    text-align: left;
+    padding: 2%;
+}
+
+#pageLogo{
+    float: left;
+    padding: 1%;
+    padding-top: 2%;
+    height: 40px;
+}
+
+#comment {display: none;}
+
+.orderTitle {
+    font-weight: bold;
+    text-align: left;
+}
+
+#image_dets {
+    width: 60px;
+    height: 60px;
+}
+
+li a:hover {
+    background-color: rgb(67, 101, 145);
+}
+
+#Name {
+    height: 20px;
+    width: 25%;
+}
+
+#Input {
+    height: 60px;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+}
+
+
+li {
+    float:left;
+    margin-right: 2%;
+}
+
